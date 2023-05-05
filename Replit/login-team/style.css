@@ -1,0 +1,95 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --color1: #563770;
+  --color2: #f0eef2;
+  --color3: #fff0fe;
+}
+
+.gensec {
+  display: flex;
+  border: 5px solid var(--color1);
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.gensec .right-side {
+  background-image: url(../Pr-6-Login-screen/bg-login.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 3 1 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff0fe;
+}
+
+.gensec .right-side h1,
+h3 {
+  margin: 5px;
+}
+
+.gensec .right-side h3 {
+  font-size: small;
+  font-weight: 400;
+}
+
+.gensec .left-side {
+  background-color: var(--color2);
+  flex: 2 1 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.gensec .left-side div:first-child i {
+  padding: 5px;
+  margin: 10px;
+}
+
+.gensec .left-side div:nth-child(2) {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: -25px;
+}
+
+.gensec .left-side div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.gensec .left-side div:nth-child(3) > input {
+  border: none;
+  border-bottom: 2px dotted var(--color1);
+  box-sizing: border-box;
+  padding: 5px 60px 5px 0;
+  background-color: var(--color2);
+  opacity: 0.5;
+}
+
+.gensec .left-side div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.gensec .left-side div:last-child button {
+  font-size: 1rem;
+  padding: 10px 50px;
+  border: none;
+  background-color: var(--color1);
+  color: var(--color3);
+  border-radius: 10px;
+}

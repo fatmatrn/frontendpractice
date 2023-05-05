@@ -1,0 +1,147 @@
+/*COMMON*/
+
+:root{
+    --color1: rgb(66, 142, 66);
+    --color2: rgb(66, 66, 223);
+    --color3: rgb(0, 0, 0);
+    --color4:white;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito',sans-serif;
+    color: var(--color3);
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px;
+    
+}
+
+header .logo{
+    max-width: 350px;
+}
+
+@media screen and (min-width: 1200px) {
+    header .logo {
+   max-width: 400px;
+    }
+}
+
+
+header nav.menu{
+    position: relative;
+}
+header nav.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0;
+    background-color: var(--color1);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    header nav.menu ul {
+      display: flex;
+      gap: 10px;
+      background: none;
+    }
+}
+
+header nav.menu ul a{
+    text-decoration: none;
+    color: var(--color4);
+    display:block;
+    padding: 10px 30px;
+}
+@media screen and (min-width: 1200px) {
+    header nav.menu ul a{
+        background-color: var(--color2);
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
+}
+header nav.menu ul a:hover{
+    color: rgb(63, 48, 33);
+}
+
+header nav.menu label{
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+@media screen and (min-width: 1200px) {
+    header nav.menu label {
+        display:none;
+    }
+}
+
+header nav.menu .chk-menu{
+    display: none;
+}
+
+header nav.menu .chk-menu:checked +ul{
+position: absolute;
+right: 10px;
+top: 25px;
+}
+
+section.content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px;
+}
+@media screen and (min-width: 600px) {
+    section.content{
+     flex-direction: row;
+    }
+section.content main{
+    flex: 5 1 700px;
+    display: flex;
+}
+section.content aside{
+    flex: 5 1 200px;
+}
+
+}
+
+
+section.content .about-us{
+display: flex;
+flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+    section.content{
+     flex-direction: row;
+    }
+section.content main{
+    flex: 5 1 700px;
+}
+section.content aside{
+    flex: 5 1 200px;
+}
+
+}

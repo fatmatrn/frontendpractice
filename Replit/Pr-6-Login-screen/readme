@@ -1,0 +1,10 @@
+ Nesne yerleşimleri için flexbox kullanınız
+
+Renk tanımlamalarını değişken kullanarak yapınız
+
+Arkaplan görüntüsü img klasöründe bulunmaktadır
+
+LONYX ve altındaki açıklama arkaplan görüntünün üzerinde merkeze gelecek şekilde ayarlanacaktır.
+
+Ekran responsive olarak tasarlanacaktır. Eğer küçük ekranlarda bakılacaksa signin formu üstte kalacak, sağ taraftaki LONYX bölümü aşağı kaydırılacaktır.
+ 

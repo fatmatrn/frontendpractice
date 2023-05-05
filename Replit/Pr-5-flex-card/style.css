@@ -1,0 +1,27 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    font-family: "Nunito",sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  :root{
+    --color1:#da3450;
+    --color2:#db8f9c;
+    --color3:white;
+  }
+  .top-line{
+    display: flex;
+  }
+  .top-line>div:first-child{
+background-color: var(--color1);
+flex: 1;
+  }
+  .top-line>div:last-child{
+background-color: var(--color2);
+flex: 4;
+  }
+
+
