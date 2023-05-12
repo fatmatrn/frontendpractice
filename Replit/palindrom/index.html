@@ -12,20 +12,78 @@
     crossorigin="anonymous"
   />
 </head>
-<body>
- 
-    <div class="container">
-        <input id="txtInput" class="form-control" type="text">
-        <button onclick="isPalindrom()" class="btn btn-info">Check</button>
-        <button onclick="cle" class="btn btn-info">Check</button>
+<style>
+  input{
+    background-color: peru !important;
+    font-size: 2rem !important;
+    color: purple !important;
+    border: 6px solid red !important;
+  }
+  .container{
+background-color: bisque;
+padding: 15px;
+border-radius: 5px;
+  }
+  .true{
+    background-color: green;
+    color: white;
+    font-size: 2rem;
+  } 
+  .false{
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+  }
+</style>
+<body class="bg-dark">
+
+    <div class="container  text-center ">
+        <input id="txtInput" class="form-control" type="number">
+        <button onclick="isPalindrom()" class="btn btn-success">Check</button>
+        <button id="clean" class="btn btn-success">Clean</button>
+        <p id="result"></p>
     </div>
 
     <script>
         const  txtInput  = document.querySelector("#txtInput");
-       txtInput.focus()
+        const  result  = document.querySelector("#result");
+        const  cleanEl  = document.querySelector("#clean");
+      // txtInput.focus()
      function isPalindrom(){
-      
+      let num = txtInput.value;
+      let a = num.length;
+      if(!num || isNaN(num) || num<0){
+        alert("Please Enter An Available Number!");
+        return;
+      }
+
+      let count=0;
+          
+      for(let i=0; i<=a/2; i++){
+        if(num[i] !== num[a-1-i]){
+          count++;
+          console.log(count)
+      }
+
      }
+
+     if(count>0){
+      result.classList.remove("true");
+      result.classList.add("false");
+      result.innerHTML="isPalindrome : false";
+     }else{
+     result.classList.remove("false");
+     result.classList.add("true");
+     result.innerHTML="isPalindrome : true";
+    }
+  }
+  const clean = ()=>{
+    result.innerHTML="";
+  }
+  cleanEl.addEventListener("click",()=>{
+    result.innerHTML="";
+    txtInput.value="";
+  })
 
     </script>
 
