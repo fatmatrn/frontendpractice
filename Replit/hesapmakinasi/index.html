@@ -19,26 +19,31 @@
     <div class="container calculator">
       <!-- Display -->
       <div class="calculator-display">
+        <span id="sonIslem" class="son-islem">44</span>
         <input type="text" class="calculator-input">
       </div>
       <!-- Buttons -->
       <div class="calculator-buttons">
-        <button value="7">7</button>
-        <button value="8">8</button>
-        <button value="9">9</button>
-        <button class="operator" value="+">+</button>
-        <button value="4">4</button>
-        <button value="5">5</button>
-        <button value="6">6</button>
-        <button class="operator" value="-">-</button>
-        <button value="1">1</button>
-        <button value="2">2</button>
-        <button value="3">3</button>
-        <button class="operator" value="*">*</button>
-        <button value="0">0</button>
-        <button class="decimal" value=".">.</button>
-        <button class="operator" value="/">/</button>
-        <button class="equal-sign operator" value="=">=</button>
+        <button class="C" onclick="tekIslem(' ')">C</button>
+        <button class ="CE" onclick="removeFirstLast()">CE</button>
+        <button class="operator yuzde" onclick="yuzdeAl()">%</button>
+        <button class="operator" onclick="karekok()" >√</button>
+        <button value="7" onclick="cokluIslem(7)">7</button>
+        <button value="8" onclick="cokluIslem(8)">8</button>
+        <button value="9" onclick="cokluIslem(9)">9</button>
+        <button class="operator" value="+" onclick="cokluIslem('+')" >+</button>
+        <button value="4" onclick="cokluIslem(4)">4</button>
+        <button value="5" onclick="cokluIslem(5)">5</button>
+        <button value="6" onclick="cokluIslem(6)">6</button>
+        <button class="operator" value="-" onclick="cokluIslem('-')">-</button>
+        <button value="1" onclick="cokluIslem(1)">1</button>
+        <button value="2" onclick="cokluIslem(2)">2</button>
+        <button value="3" onclick="cokluIslem(3)">3</button>
+        <button class="operator" value="*" onclick="cokluIslem('*')">*</button>
+        <button value="0" onclick="cokluIslem(0)">0</button>
+        <button class="decimal" value="." onclick="cokluIslem('.')">.</button>
+        <button class="operator" value="/" onclick="cokluIslem('/')">/</button>
+        <button class="equal-sign operator" value="=" onclick="hesapla()">=</button>
       </div>
     </div>
     <!-- Script -->
