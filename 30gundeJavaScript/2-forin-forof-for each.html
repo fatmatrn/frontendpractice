@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    const arr = ["Aaa","Bbb","Ccc","Ddd","Eee"];
+
+    for(let i in arr){
+        console.log(i)
+    }
+    for(let i of arr){
+        console.log(i)
+    }
+    for(let [i,j] of arr.entries()){
+        console.log(i)
+        console.log(j)
+    }
+
+
+
+
+
+
+    for(let i of arr){
+        console.log(i);
+    }
+
+    arr.forEach((i)=>console.log(i));
+    arr.forEach((i,j)=>{
+        console.log(i);
+        console.log(j);
+
+    });
+
+
+
+    </script>
+</body>
+</html>

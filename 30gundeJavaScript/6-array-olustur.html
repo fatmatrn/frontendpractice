@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    const arr =["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
+
+let a = arr.length;
+let i = 0;
+    while(i<=a){
+        let brr = [];
+        brr.push(arr[i]);
+        brr.push(arr[i].substring(0,3).toLocaleLowerCase());
+        brr.push(arr[i].length);
+        console.log(brr);
+        i++;
+    }
+</script>
+
+</body>
+</html>

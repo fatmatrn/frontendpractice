@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 125px;
+            height: 125px;
+            border: none;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn0">Button</button>
+    <button id="btn1">Button</button>
+    <button id="btn2">Button</button>
+    <button id="btn3">Button</button>
+    <button id="btn4">Button</button>
+    <button id="btn5">Button</button>
+    <button id="btn6">Button</button>
+    <button id="btn7">Button</button>
+    <button id="btn8">Button</button>
+    <button id="btn9">Button</button>
+    <button id="btn10">Button</button>
+    <button id="btn11">Button</button>
+    <button id="btn12">Button</button>
+    <button id="btn13">Button</button>
+    <button id="btn14">Button</button>
+    <button id="btn15">Button</button>
+    <button id="btn16">Button</button>
+    <button id="btn17">Button</button>
+    <button id="btn18">Button</button>
+    <button id="btn19">Button</button>
+    <script>
+
+
+// let p1=Math.floor(Math.random()*256);
+// let p2=Math.floor(Math.random()*256);
+// console.log(p1,p2)
+
+// document.querySelector("#btn").style.backgroundColor=`rgb(${p1},${p2},${p2})`;
+// console.log(`rgb(${p1},${p2},${p2})`)
+
+function randomRGBColor() {
+  for (let i = 0; i < 20; i++) {  // 5 kez rastgele renk oluşturmak için döngüyü tekrarlıyoruz
+    const p1 = Math.floor(Math.random() * 256);  
+    const p2 = Math.floor(Math.random() * 256);   
+    const p3 = Math.floor(Math.random() * 256);   
+
+    const rgbColor = `RGB(${p1}, ${p2}, ${p3})`;  // Rastgele üretilen değerleri birleştirerek RGB renk formatına dönüştürüyoruz
+    console.log(rgbColor);  // Oluşturulan rastgele renk numarasını konsola yazdırıyoruz
+    document.querySelector(`#btn${i}`).style.backgroundColor=rgbColor;
+
+  }
+}
+randomRGBColor();
+
+
+
+    </script>
+</body>
+</html>
