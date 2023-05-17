@@ -1,3 +1,18 @@
-.team-section{
-    text-align: center;
+div.card{
+    box-shadow: 2px 2px 5px gray ;
+}
+
+h3,h1{
+    font-weight: 700;
+}
+
+h3+p{
+    font-weight: 600;
+    opacity: 0.6;
+}
+.social{
+    gap: 15px;
+}
+section.container > p{
+  color: gray;
 }
