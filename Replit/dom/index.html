@@ -16,17 +16,28 @@
     body{
         font-size: 1.5rem;
     }
+    .first-group{
+      display: flex;
+    }
     .first-group > button{
         border-radius: 15px !important;
         border:none;
         color: white;
         background-color: rgba(155, 155, 18, 0.793);
     }
-    
-    .first-group > input{
-        border-radius: 15px !important;
+
+    .first-group #txtName{
+      flex: 10;
+      border-radius: 15px !important;
         border: 5px solid gray;
     }
+    .first-group #txtPoint{
+      flex: 2;
+      border-radius: 15px !important;
+        border: 5px solid gray;
+    }
+    
+   
     
   </style>
 </head>
@@ -40,7 +51,7 @@
     
     <i class="fa-solid fa-check"></i>
     <i class="fa-solid fa-xmark"></i>
-    <table id="tblStudents" class="table table-bordered  table-striped">
+    <table id="tblStudents" class="table table-bordered  table-striped border-primary">
         <thead class="table-dark">
             <tr>
                 <th>#</th>
@@ -50,22 +61,20 @@
             </tr>
         </thead>
         <tbody>
-          <tr>
-            <th>gdf</th>
-            <th>gtdr</th>
-            <th>hgtdr</th>
-            <th>gfd</th>
-          </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
           
-          <tr>
-            <th>gdf</th>
-            <th>gtdr</th>
-            <th>hgtdr</th>
-            <th>gfd</th>
-          </tr>
-          
-            
-        </tbody>
+       </tbody>
+       <tfoot>
+        <tr>
+          <td class="text-end" colspan="2">Average</td>
+          <td></td>
+        </tr>
+       </tfoot>
     </table>
 
 <script src="script.js"></script>

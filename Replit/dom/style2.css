@@ -1,0 +1,36 @@
+.inputarea {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .inputarea #name {
+    flex: 20;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  
+  .inputarea #point {
+    flex: 1;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  
+  .inputarea button {
+    flex: 1;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+  }
+  
+  .table td,
+  .table th {
+    border: 2px solid white;
+  }
