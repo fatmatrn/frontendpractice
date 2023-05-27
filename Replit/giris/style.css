@@ -1,0 +1,156 @@
+
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom:50px ;
+    padding: 0 10px;
+}
+
+.chk-menu{
+display: none;
+margin-top: 100px ;
+}
+
+
+ .logo img{
+    width: 75%;
+}
+
+
+
+.people img{
+    width: 300px;
+}
+
+header label{
+    position: absolute;
+    right: 10px;
+    background-color: green;
+    font-size: 1.5rem;
+}
+
+header nav.menu{
+    position: absolute;
+    right: 10px;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    display: none;
+}
+.chk-menu:checked +nav.menu{
+display: block;
+}
+
+header nav.menu ul{
+list-style-type: none;
+line-height: 30px;
+margin: 0;
+
+}
+header nav.menu ul li{
+
+    background-color: green;
+}
+header nav.menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}
+header nav.menu ul li a:hover{
+color: black;
+}
+
+@media screen and (min-width:768px){
+
+    header nav.menu{
+        display: block;
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+}
+    header nav.menu ul{
+      display: flex;
+      gap: 15px;
+   
+}
+    header label{
+        display: none;
+    }
+    .logo img{
+        width: 250px;
+    }
+
+}
+
+
+main section.left-side{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    width: 100%;
+}
+main section.left-side img{
+    width: 100%;
+}
+@media screen and (max-width:320px){
+    main section.left-side img{
+       min-width: 250px;
+    }
+    main section.left-side{
+        flex-direction: column;
+    }
+}
+
+main section.right-side{
+    background-color: rgb(222, 212, 212);
+    padding: 10px;
+    width: 100vw;
+    
+}
+
+main section.right-side img{
+    width: 100%;
+    padding: 25px;
+}
+@media screen and (min-width:768px){
+main{
+    display: flex;
+}
+
+
+}
+
+footer{
+    background-color: rgb(216, 204, 204);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:50px ;
+    gap: 10px;
+    justify-content: space-around;
+
+}
+footer nav ul{
+    list-style-type:none;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
